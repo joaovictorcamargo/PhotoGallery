@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.i {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  margin: 50px 0;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 61px 7px #5e5e5e;
+  padding: 50px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.i-left-wrapper {
+  padding: 50px;
+}
+
+.i-link {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.i-item {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: 0.3s ease box-shadow;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 1);
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+  color: gray;
+  background-color: transparent;
+  width: 100%;
+}
+
+form ion-icon {
+  position: absolute;
+  right: 0;
+  opacity: 0.5;
+  color: gray;
+  font-size: 20px;
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 50px;
+  grid-gap: 20px;
+}
+
+.i-name {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: #00000040;
+  color: aliceblue;
+  bottom: 0px;
+  font-weight: 300;
+  transition: 0.5s ease-in-out bottom;
+  font-size: 20px;
+}
+
+.load-more {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: black;
+  padding: 20px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+}
